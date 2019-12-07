@@ -6,7 +6,8 @@
 
 ### Flow Chart
 ![FlowChart](src/assets/images/DIAGRAM HERE.png)
-
+### WireFraming model 
+https://xd.adobe.com/view/38e6fe4f-424b-4adf-79d8-79f8f321859b-4ed7/
 ## Description
 
 _The Application will allow a person to search, view and create a river for white water sports. The data will return the current flow, put in and take out's with gps locations, class of river, length of river and special features. There will also have a community message bored giving live updates on the rivers as people report._
