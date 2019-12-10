@@ -8,6 +8,9 @@ Colors used for the wireframing ap
     worked on addition file structor and researching API in Node.js and building scrapper in Node.JS over the weekend. 
     
 Check out udemy for more react with auth info. 
+Check out Mongo vs Firebased for DB options.
+Start seeding data on rivers with ethan
+
 
 
 12/13
@@ -18,6 +21,10 @@ Check out udemy for more react with auth info.
     1-3 finish scrapper and return info on home page[MVP Should be complete to return infomation]
     3-5 start incorrprating User loggin if you have time. 
 
+12/9 Week
+    Watch React videos on Udemy, work with Ethan on seeding data.
+    Get ahead on any of the todo's
+    
 12/16 week start
     Monday- If everything from Fri works, Set up user authentication with message board and journal with fav river.
 
