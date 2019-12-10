@@ -9,3 +9,18 @@ Colors used for the wireframing ap
     
 Check out udemy for more react with auth info. 
 
+
+12/13
+- schedule:
+    8am-10 am - Build out the home page UI
+    10- 12 - Watch video on scapper and build with video. Set up google search api. 
+    12-1 lunch
+    1-3 finish scrapper and return info on home page[MVP Should be complete to return infomation]
+    3-5 start incorrprating User loggin if you have time. 
+
+12/16 week start
+    Monday- If everything from Fri works, Set up user authentication with message board and journal with fav river.
+
+    Tuesday- Work on live updates with adding a river and messages displaying on the river page.
+
+    Wednesday- Final UI and ReadME touch ups. Beautify or work on any bugs. 
