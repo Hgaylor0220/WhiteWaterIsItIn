@@ -1,37 +1,43 @@
 import React from 'react';
-import Menu from './Menu';
+import Header from './Header';
 import Home from './Home';
-import {Switch, Route} from 'react-router-dom';
+import JournalEntry from './JournalEntry';
+import NewOrderControl from './NewOrderControl';
 import Error404 from './Error404';
-import RiverSearch from './RiverSearch';
-
-
-
+import { Switch, Route } from 'react-router-dom';
+import Admin from './Admin';
+import ViewStock from './ViewStock';
 
 class App extends React.Component {
+
     constructor(props) {
         super(props);
         this.state = {
-            masterRiverSearch: []
+            masterJournalEntry: []
         };
-        this.handleNewSearch = this.handleNewSearch.bind(this);
+        this.handleAddingNewOrderToList = this.handleAddingNewOrderToList.bind(this);
     }
-        handleNewSearch(newSearch) {
-        var newMasterRiverSearch = this.state.masterRiverSearch.slice();
-        newMasterRiverSearch.push(newSearch);
-        this.setState({ masterRiverSearch: newMasterRiverSearch });
+
+    handleAddingNewOrderToList(newOrder) {
+        var newMasterJournalEntry = this.state.masterJournalEntry.slice();
+        newMasterJournalEntry.push(newOrder);
+        this.setState({ masterJournalEntry: newMasterJournalEntry });
     }
-    render(){
-        
+    render() {
         return (
             <div>
-            <Menu/>
-            <Switch/>
-            <Route exact path ='/' component={Home} />
-            <Route path ='/RiverSearch' render={() =><RiverSearch riverSearch={this.state.masterRiverSearch} currentRouterPath= {props.currentLocation.pathname}/>} /> 
-            <Route component={Error404} />
+                <Header />
+                <Switch>
+                    <Route exact path='/' component={Home} />
+                    <Route path='/orderList' render={() => <JournalEntry orderList={this.state.masterJournalEntry} />} />
+                    <Route path='/neworder' render={() => <NewOrderControl onNewOrderCreation={this.handleAddingNewOrderToList} />} />
+                    <Route path='/admin' render={(props) => <Admin orderList={this.state.masterJournalEntry} currentRouterPath={props.location.pathname} />} />
+
+                    <Route component={Error404} />
+                </Switch>
             </div>
         );
-    };
+    }
 }
+
 export default App;
